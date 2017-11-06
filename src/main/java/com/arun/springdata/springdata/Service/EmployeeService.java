@@ -2,7 +2,6 @@ package com.arun.springdata.springdata.Service;
 
 import com.arun.springdata.springdata.Entity.Employee;
 import com.arun.springdata.springdata.Repository.EmployeeRepository;
-import com.arun.springdata.springdata.Repository.EmployeeRepositoryOnName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +13,6 @@ public class EmployeeService implements IEmployeeService {
 
     @Autowired
     private EmployeeRepository employeeRepository;
-    @Autowired
-    private EmployeeRepositoryOnName employeeRepositoryOnName;
-
 
     @Override
     public void addEmployee(Employee employee) {
